@@ -7,7 +7,7 @@ export const Friends = ({friend}) => {
                 {
                     friend.map((el) => (
                         <li className={css.item} id={el.id} key={el.id} >
-  <span className={`${css.status} ${el.isOnline ? css.online : css.offline}`} isOnline={el.isOnline}></span>
+  <span className={`${css.status} ${el.isOnline ? css.online : css.offline}`} ></span>
   <img className={css.avatar} src={el.avatar} alt={el.name} width="48" />
     <p className={css.name}>{ el.name}</p>
 </li>
